@@ -1,11 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>HOLA CAMPUS</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Hola, soy Kevin Bueno</h1>
+            <p>Estudiante de programación y desarrollador en formación.</p>
+        </div>
+    </header>
+
+    <!-- Imágenes flotantes -->
+    <section class="floating-images">
+        <img src="img\Java-logo.png" alt="Planeta" class="floating-image">
+        <img src="img\Unofficial_JavaScript_logo_2.svg.png" alt="Estrella" class="floating-image">
+        <img src="img\Python-logo-notext.svg.png" alt="Nave espacial" class="floating-image">
+    </section>
+
+    <section id="about" class="about">
+        <h2>Sobre mí</h2>
+        <p>Soy un estudiante apasionado por la tecnología y el desarrollo de software. Me encanta aprender nuevas tecnologías y poner en práctica lo que aprendo a través de proyectos.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <h3>HTML</h3>
+                <div class="skill-bar">
+                    <div class="bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>CSS</h3>
+                <div class="skill-bar">
+                    <div class="bar" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="bar" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>Python</h3>
+                <div class="skill-bar">
+                    <div class="bar" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project-item">
+                <h3>Liga Betplay</h3>
+                <p>Un breve software emulando la liga betplay, como primer proyecto en Phyton</p>
+                <a href="#" class="project-link">Ver proyecto</a>
+            </div>
+            <div class="project-item">
+                <h3>Portfolio HTML,CSS</h3>
+                <p>Portafolio para tener una muy buena presentacion para diferentes empresas</p>
+                <a href="#" class="project-link">Ver proyecto</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo" required>
+            <textarea placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
